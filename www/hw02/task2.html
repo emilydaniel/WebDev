@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HW2 Task 2</title>
+    </head>
+    <body>
+        <h1 id="counter"></h1>
+
+        <button onclick="alertNum()">Alert!</button>
+        <button onclick="incrementNum()">Increment!</button>
+        <button onclick="appendNum()">Append!</button>
+
+        <p id="appendPara"></p>
+
+        <script>
+            var num = 10;
+            var par = "";
+            document.getElementById("counter").innerHTML = num;
+            
+
+            function alertNum() {
+                window.alert("The current value is: " + num);
+            }
+
+            function incrementNum() {
+                document.getElementById("counter").innerHTML 
+                    = num += 1;
+            }
+
+            function appendNum() {
+                document.getElementById("appendPara").innerHTML
+                    = par = (num + "<br>" + par);
+            }
+        </script>
+    </body>
+</html>
