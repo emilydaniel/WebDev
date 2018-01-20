@@ -1,9 +1,9 @@
-#adapted from the default file
+#adapted from the default file 
 server {
     listen 80;
     listen [::]:80;
 
-    root /home/emily/www/hw02/;
+    root /home/emily/www/hw02;
 
     index index.html;
 
